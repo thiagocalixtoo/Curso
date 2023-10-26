@@ -1,7 +1,6 @@
 package application;
 
 import entities.Employee;
-
 import java.util.Scanner;
 
 public class CalculateSalary {
