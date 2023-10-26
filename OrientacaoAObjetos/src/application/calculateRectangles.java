@@ -5,13 +5,16 @@ import java.util.Scanner;
 public class calculateRectangles {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
+        String name;
+        double height;
+        double width;
 
         System.out.print("Enter the name of rectangle: ");
-        String name = sc.nextLine();
+        name = sc.nextLine();
         System.out.print("Enter the height of rectangle: ");
-        double height = sc.nextDouble();
+        height = sc.nextDouble();
         System.out.print("Enter the width of rectangle: ");
-        double width = sc.nextDouble();
+        width = sc.nextDouble();
         sc.nextLine();
 
         Rectangles r = new Rectangles(name, height, width);
@@ -25,5 +28,6 @@ public class calculateRectangles {
         r.setWidth(sc.nextDouble());
 
         System.out.println("\nUpdate data:\n" + r);
+        sc.close();
     }
 }

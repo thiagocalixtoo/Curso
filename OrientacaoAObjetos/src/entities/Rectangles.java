@@ -14,27 +14,13 @@ public class Rectangles {
     public String getNameRectangle() {
         return nameRectangle;
     }
-
     public void setNameRectangle(String nameRectangle) {
         this.nameRectangle = nameRectangle;
-    }
-
-    public double area(){
-        return getHeight()*getWidth();
-    }
-
-    public double perimeter(){
-        return 2*(getHeight()+getWidth());
-    }
-
-    public double diagonal(){
-        return Math.sqrt(getHeight()*getHeight()+getWidth()*getWidth());
     }
 
     public double getHeight() {
         return height;
     }
-
     public void setHeight(double height) {
         this.height = height;
     }
@@ -42,9 +28,18 @@ public class Rectangles {
     public double getWidth() {
         return width;
     }
-
     public void setWidth(double width) {
         this.width = width;
+    }
+
+    public double area(){
+        return getHeight()*getWidth();
+    }
+    public double perimeter(){
+        return 2*(getHeight()+getWidth());
+    }
+    public double diagonal(){
+        return Math.sqrt(getHeight()*getHeight()+getWidth()*getWidth());
     }
 
     public String toString(){
